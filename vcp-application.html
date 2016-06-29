@@ -60,7 +60,37 @@
 <div class="container">
 
 <div class="col-md-6 col-lg-12"><div class="page-header">
-  <h1>Brother's Death</h1>
+  <h1>Brother's Death &nbsp;<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#editAppName"><span class="glyphicon glyphicon-pencil"> </span> Edit</button></h1> 
+  
+      
+      
+      <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="editAppName" tabindex="-1" role="dialog" aria-labelledby="editAppName">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Edit Application Name</h4>
+      </div>
+      <div class="modal-body">
+        
+        <div class="form-group">
+    <label for="exampleInputEmail1">Application Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Brother's death">
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a href="vcp-application.html" role="button" class="btn btn-success btn-large">Edit</a>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
 </div></div>
 
 
@@ -71,21 +101,21 @@
     <div class="text-justify col-sm-8 col-md-8 col-lg-3">
       <h4>Progress</h4>
       <ul class="nav nav-pills nav-stacked">
-  <li role="presentation" class="active"><a href="#">Step 1</a></li>
-  <li role="presentation" class="active"><a href="#">Step 2</a></li>
-  <li role="presentation"><a href="#">Step 3</a></li>
-  <li role="presentation"><a href="#">Step 4</a></li>
-  <li role="presentation"><a href="#">Step 5</a></li>
-  <li role="presentation"><a href="#">Step 6</a></li>
-  <li role="presentation"><a href="#">Step 7</a></li>
-  <li role="presentation"><a href="#">Step 8</a></li>
-  <li role="presentation"><a href="#">Step 9</a></li>
-  <li role="presentation"><a href="#">Step 10</a></li>
-</ul>
+        <li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-check pull-right"></span>Section 1</a></li>
+        <li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-check pull-right"></span>Section  2</a></li>
+        <li role="presentation"><a href="#"><span class="glyphicon glyphicon-unchecked pull-right"></span>Section  3</a></li>
+        <li role="presentation"><a href="#"><span class="glyphicon glyphicon-unchecked pull-right"></span>Section  4</a></li>
+        <li role="presentation"><a href="#"><span class="glyphicon glyphicon-unchecked pull-right"></span>Section  5</a></li>
+        <li role="presentation"><a href="#"><span class="glyphicon glyphicon-unchecked pull-right"></span>Section  6</a></li>
+        <li role="presentation"><a href="#"><span class="glyphicon glyphicon-unchecked pull-right"></span>Section  7</a></li>
+        <li role="presentation"><a href="#"><span class="glyphicon glyphicon-unchecked pull-right"></span>Section  8</a></li>
+        <li role="presentation"><a href="#"><span class="glyphicon glyphicon-unchecked pull-right"></span>Section  9</a></li>
+        <li role="presentation"><a href="#"><span class="glyphicon glyphicon-unchecked pull-right"></span>Section  10</a></li>
+      </ul>
       
 &nbsp;</div>
     <div class="text-justify col-xs-12 col-sm-4 col-md-4 col-lg-9">
-      <h4>Step 2 - Crime Victim</h4>
+      <h4>Section 2 - Crime Victim</h4>
       <form>
       <div class="form-group">
         <label for="exampleInputEmail1">First Name</label>
@@ -134,9 +164,34 @@
       
       <hr>
       
-      <button type="button" class="btn btn-default" data-dismiss="modal">Exit</button>
-        <button type="button" class="btn btn-primary">Prev</button>
-        <button type="button" class="btn btn-primary">Next</button>
+      
+      <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#exitApplication"> Exit</button>
+      
+      <!-- Modal -->
+<div class="modal fade" id="exitApplication" tabindex="-1" role="dialog" aria-labelledby="exitApplication">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Before you exit</h4>
+      </div>
+      <div class="modal-body">
+        
+        Do you want to save this application for later?
+      </div>
+      <div class="modal-footer">
+        <a href="vcp.html" role="button" class="btn btn-default btn-large">Don't save</a>
+        <a href="vcp.html" role="button" class="btn btn-success btn-large">Save</a>
+      </div>
+    </div>
+  </div>
+</div>
+      
+      
+        <div class="pull-right">
+        <a href="vcp-application.html" role="button" class="btn btn-primary btn-large">Prev</a>
+        <a href="vcp-application-3.html" role="button" class="btn btn-primary btn-large">Next</a>
+        </div>
       </form>
       
     </div>
