@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.header-logo{
+	padding: 20px;
+}
+
+.vcp-progress{
+	padding: 20px;
+}
+
+@media (max-width: 767px) {
+    .col-xs-12 {
+        padding-top: 40px;
+    }
+}
+
