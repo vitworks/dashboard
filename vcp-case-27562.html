@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CalVCP - Dashboard</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+
+<!-- Your custom css -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+<img src="calvcp-logo.png" alt="Placeholder image" width="200" class="img-responsive header-logo"></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="nav navbar-nav">
+        
+        <li></li>
+        <li class="dropdown">
+<ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+<ul class="nav navbar-nav navbar-right">
+        <li><a href="vcp.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#newApplication">New Application</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="help.html">Help/FAQ</a></li>
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
+<div class="container">
+
+<div class="col-md-6 col-lg-12"><div class="page-header">
+    <h1>Drive by Shooting
+<button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#editAppName"><span class="glyphicon glyphicon-pencil"> </span> Edit</button></h1> 
+  
+      
+      
+      <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="editAppName" tabindex="-1" role="dialog" aria-labelledby="editAppName">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Edit Application Name</h4>
+      </div>
+      <div class="modal-body">
+        
+        <div class="form-group">
+    <label for="exampleInputEmail1">Application Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Brother's death">
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a href="vcp-application.html" role="button" class="btn btn-success btn-large">Edit</a>
+      </div>
+    </div>
+  </div>
+</div>
+  
+</div></div>
+
+
+  
+  
+ 
+  <div class="row">
+    <div class="text-justify col-sm-8 col-md-8">
+      <h4>Case# 27562</h4>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>List of claims</h4>
+        </div>
+          <div class="panel-body">
+            
+            
+            <div class="table-responsive"> <table class="table"> <thead> <tr> <th>Submitted</th>  
+            <th>Type</th> 
+            <th>Description</th> 
+            <th> Status</th> 
+            </tr> </thead> 			<tbody> 
+                <tr> <td>06/15/16</td>  <td>Bill</td> <td>Medical Bill from Kaiser, Date of Service: 2/23/2015</td> <th scope="row">Submitted</th></tr>
+                <tr> <td> 06/14/16</td>  <td>Income Loss</td> <td>Income loss due to no payment from head of household</td><th scope="row">Allowed</th></tr>
+				<tr> <td> 06/13/16</td>  <td>Income Loss</td> <td>Income loss due to no payment from head of household</td> <th scope="row">Denied</th></tr>
+                <tr> <td> 06/12/16</td> <td>Bill</td> <td>Medical Bill from Kaiser, Date of Service: 2/23/2015</td> <th scope="row">Accepted</th></tr>
+                <tr> <td> 06/10/16</td> <td>Bill</td> <td>Medical Bill from Kaiser, Date of Service: 2/23/2015</td> <th scope="row"> Paid ($23,000)</th></tr>
+             </tbody> </table> </div>
+             <nav> <ul class="pagination"> <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li> <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li> <li><a href="#">2</a></li> <li><a href="#">3</a></li> <li><a href="#">4</a></li> <li><a href="#">5</a></li> <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li> </ul> </nav>
+             
+             
+             <button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#newClaim" aria-expanded="false" aria-controls="collapseExample">
+    New Claim
+  </button>
+  
+  
+  <div class="collapse" id="newClaim">
+  <div class="card card-block">
+  <br />
+    <h4>Submit a new claim</h4>
+    
+    <div class="form-group col-lg-6">
+              <label for="Gender" class="select">Claim Type</label>
+              <select class="form-control">
+           		<option>Expense</option>
+                	<option>Income loss</option>
+                  	<option>Income Support Loss</option> 
+                </select>
+                
+    </div>
+    
+    <div class="form-group col-lg-12">
+              <label for="Gender" class="select">Description</label>
+              <textarea class="form-control" rows="3"></textarea>
+                
+    </div>
+    
+    <div class="form-group col-lg-12">
+                    <label for="exampleInputFile">Upload Documents</label>
+                    <input type="file" id="exampleInputFile">
+                    
+              </div>
+     <div class="form-group col-lg-12">         
+    <button type="button" class="btn btn-success btn-sm">Submit New Claim</button>
+    </div>
+    
+    
+  </div>
+</div>
+            
+            
+            
+            
+            
+        </div>
+      </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-heading"><h4>List of Communications</h4></div>
+          <div class="panel-body">
+            <div class="table-responsive"> <table class="table"> <thead> <tr> <th>Date</th>  
+            <th>From</th> 
+            <th>Subject</th> 
+             
+            </tr> </thead> 			<tbody> 
+                <tr> <td>06/15/16</td>  <td>John Smith</td> <th scope="row"><a href="vcp-new-communication.html">Please upload copy of crime report</a> <span class="badge" style="background-color: #d9534f;">new</span></th></tr>
+                <tr> <td>06/14/16</td>  <td>John Smith</td> <th scope="row">Please upload copy of Medical Bill from July 15 2016 <span class="badge" style="background-color: #d9534f;">new</span></th></tr>
+                <tr> <td>06/13/16</td>  <td>John Smith</td> <th scope="row"><a href="vcp-new-communication.html">Please upload copy of crime report</a></th></tr>
+                <tr> <td>06/13/16</td>  <td>John Smith</td> <th scope="row">Please add claims</th></tr>
+                <tr> <td>06/12/16</td>  <td>John Smith</td> <th scope="row">Your application has been accepted</th></tr>
+                
+             </tbody> </table> </div>
+             <nav> <ul class="pagination"> <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li> <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li> <li><a href="#">2</a></li> <li><a href="#">3</a></li> <li><a href="#">4</a></li> <li><a href="#">5</a></li> <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li> </ul> </nav>
+            
+            
+            
+             
+             <button class="btn btn-success btn-sm" type="button" data-toggle="collapse" data-target="#newCommunication" aria-expanded="false" aria-controls="collapseExample">
+    New Communication
+  </button>
+             
+             <div class="collapse" id="newCommunication">
+  <div class="card card-block">
+  <br />
+    <h4>Submit a new Communication</h4>
+    
+    <div class="form-group col-lg-6">
+              <label for="Gender" class="select">Communication Type</label>
+              <select class="form-control">
+           		<option>Change of Address</option>
+                	<option>Request a Question</option>
+                  	<option>Provide Additional Information</option> 
+                </select>
+                
+    </div>
+    
+    <div class="form-group col-lg-12">
+              <label for="Gender" class="select">Description</label>
+              <textarea class="form-control" rows="3"></textarea>
+                
+    </div>
+    
+    <div class="form-group col-lg-12">
+                    <label for="exampleInputFile">Upload Documents</label>
+                    <input type="file" id="exampleInputFile">
+                    
+              </div>
+     <div class="form-group col-lg-12">         
+    <button type="button" class="btn btn-success btn-sm">Submit New Communication</button>
+    </div>
+    
+    
+  </div>
+</div>
+             
+             
+             
+          </div>
+        </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-heading"><h4>List of Documents</h4> </div>
+          <div class="panel-body">
+          
+          <div class="table-responsive"> <table class="table"> <thead> <tr> <th>Date</th>  
+            <th>Type</th> 
+            <th>Direction</th> 
+            <th>&nbsp; </th> 
+            </tr> </thead> 			<tbody> 
+                <tr> <td>06/15/16</td>  <td>Bill</td> <td>In</td> <th scope="row"><a href="#">Download</a></th></tr>
+                <tr> <td> 06/14/16</td>  <td>Income Loss</td> <td>In</td><th scope="row"><a href="#">Download</a></th></tr>
+				<tr> <td> 06/13/16</td>  <td>Income Loss</td> <td>Out</td> <th scope="row"><a href="#">View</a></th></tr>
+                <tr> <td> 06/12/16</td> <td>Bill</td> <td>In</td> <th scope="row"><a href="#">Download</a></th></tr>
+                <tr> <td> 06/10/16</td> <td>Bill</td> <td>In</td> <th scope="row"><a href="#">Download</a></th></tr>
+             </tbody> </table> </div>
+            
+ 
+          </div>
+          <br />
+          
+         
+    
+        </div>
+        
+        
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4>List of Payments</h4>
+          </div>
+          <div class="panel-body">
+            <div class="table-responsive"> <table class="table"> <thead> <tr> <th>Date</th>  
+            <th> Amount</th> 
+            <th> Payee</th> 
+             
+            </tr> </thead> 			<tbody> 
+                <tr> <td>06/15/16</td>  <td>$12,893.00</td> <th scope="row">John Smith</th></tr>
+                <tr> <td>06/14/16</td>  <td>$1,234.56</td> <th scope="row">Joshua Smith</th></tr>
+                <tr> <td>06/13/16</td>  <td>$500.50</td> <th scope="row">Amy Smith</th></tr>
+                <tr> <td>06/13/16</td>  <td>$4,789.00</td> <th scope="row">Owen Smith</th></tr>
+                <tr> <td>06/12/16</td>  <td>$3,789.00</td> <th scope="row">Mark Smith</th></tr>
+                
+             </tbody> </table> </div>
+             <nav> <ul class="pagination"> <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li> <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li> <li><a href="#">2</a></li> <li><a href="#">3</a></li> <li><a href="#">4</a></li> <li><a href="#">5</a></li> <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li> </ul> </nav>
+            
+            
+          </div>
+        </div>
+        
+        
+        
+        
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4>List of Benefits</h4>
+          </div>
+          <div class="panel-body">
+            
+            
+            <div class="table-responsive"> <table class="table"> <thead> <tr> <th>Type</th>  
+            <th> Approved</th> 
+            <th> Available</th> 
+             
+            </tr> </thead> 			<tbody> 
+                <tr> <td>Medical and/or dental expenses</td>  
+                <td>$12,893.00</td> <th scope="row">$5,893.00</th></tr>
+                <tr> <td>Moving or relocation expenses</td>  
+                <td>$1,234.56</td> <th scope="row">$893.00</th></tr>
+                <tr> <td>Job retraining</td>  <td>$500.50</td> <th scope="row">$93.00</th></tr>
+                <tr> <td> Home security improvements</td>  
+                <td>$4,789.00</td> <th scope="row">$2,789.00</th></tr>
+                <tr> <td>Income loss</td>  
+                <td>$3,789.00</td> <th scope="row">$2,789.00</th></tr>
+                
+             </tbody> </table> </div>
+        
+          </div>
+          <br />
+          
+         
+    
+        </div>
+      
+      <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="newApplication" tabindex="-1" role="dialog" aria-labelledby="newApplication">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Start new Application</h4>
+      </div>
+      <div class="modal-body">
+        
+        <div class="form-group">
+    <label for="exampleInputEmail1">Application Name</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Brother's death">
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <a href="vcp-application.html" role="button" class="btn btn-success btn-large">Continue</a>
+      </div>
+    </div>
+  </div>
+</div>
+      
+&nbsp;</div>
+    
+    
+    <br />
+    <br />
+    <div class="col-xs-12 col-sm-4 col-md-4">
+      <h4>Case Summary</h4>
+      <div class="alert alert-info">
+      
+      <div class="caption">
+
+        
+        <dl>
+          <dt>Status:</dt>
+          <dd>Accepted</dd>
+        </dl>
+        
+        <dl>
+          <dt>Claiment:</dt>
+          <dd>John Smith</dd>
+        </dl>
+        
+        <dl>
+          <dt>Victim:</dt>
+          <dd>Nick Vornez</dd>
+        </dl>
+        
+        <dl>
+          <dt>Started:</dt>
+          <dd>1/12/2016</dd>
+        </dl>
+        
+        <dl>
+          <dt>Submitted:</dt>
+          <dd>1/12/2016</dd>
+        </dl>
+        
+        <dl>
+          <dt>Accepted:</dt>
+          <dd>2/12/2016</dd>
+        </dl>
+        
+      <a href="vcp-application.html" role="button" class="btn btn-primary btn-large">View Application</a> 
+      <a href="vcp-application.pdf" role="button" class="btn btn-primary btn-large">View Application in PDF</a>           
+    
+        
+
+      </div>
+    </div>
+  </div>
+</div>
+  <br /><br />
+
+  
+
+  <hr>
+  <div class="row">
+    <div class="text-center col-md-6 col-md-offset-3">
+      <h4>Orion Victims Compensation Program</h4>
+      <p>Copyright &copy; 2016 &middot; All Rights Reserved &middot; <a href="#">url</a></p>
+    </div>
+  </div>
+  <hr>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
