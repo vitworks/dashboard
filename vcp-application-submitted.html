@@ -44,11 +44,11 @@
         </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Profile</a></li>
+        <li><a href="vcp.html">Home</a></li>
+        <li><a href="vcp-profile.html">Profile</a></li>
         <li class="active"><a href="#" data-toggle="modal" data-target="#newApplication">New Application</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Help/FAQ</a></li>
+        <li><a href="vcp-contact-us.html">Contact Us</a></li>
+        <li><a href="vcp-help.html">Help/FAQ</a></li>
         
       </ul>
     </div>
@@ -145,7 +145,16 @@
       
 &nbsp;</div>
     <div class="text-justify col-xs-12 col-sm-4 col-md-4 col-lg-9">
-      <h4>Section 13 - Summary</h4>
+      <h4>&nbsp;</h4>
+      
+      
+      <div class="alert alert-success" role="alert"><h4>Your application was submitted</h4>
+        <p>Our team will review your application and will notify you if we need additional information. Meanwhile you can add claim(s).</p>
+      </div>
+      
+      
+      
+      
       <div class="panel panel-default">
           <div class="panel-body">
           <h4>Claiment</h4>
@@ -158,20 +167,62 @@
             <h4>Crime</h4>
             <p>Homicide</p>
             <br />
+            <h4>Started:</h4>
+            <p>1/12/2016</p>
+            <br />
+            <h4>Submitted:</h4>
+            <p>1/12/2016</p>
+            <br />
+            <h4>Status:</h4>
+            <p>Pending</p>
+            <br />
+            
+             
+      <a href="vcp-application.pdf" role="button" class="btn btn-primary btn-large">View Application in PDF</a>
+                   <button class="btn btn-success btn-large" type="button" data-toggle="collapse" data-target="#newClaim" aria-expanded="false" aria-controls="collapseExample">
+    New Claim
+  </button>
+  
+  
+  <div class="collapse" id="newClaim">
+  <div class="card card-block">
+  <br />
+    <h4>Submit a new claim</h4>
+    
+    <div class="form-group col-lg-6">
+              <label for="Gender" class="select">Claim Type</label>
+              <select class="form-control">
+           		<option>Expense</option>
+                	<option>Income loss</option>
+                  	<option>Income Support Loss</option> 
+                </select>
+                
+    </div>
+    
+    <div class="form-group col-lg-12">
+              <label for="Gender" class="select">Description</label>
+              <textarea class="form-control" rows="3"></textarea>
+                
+    </div>
+    
+    <div class="form-group col-lg-12">
+                    <label for="exampleInputFile">Upload Documents</label>
+                    <input type="file" id="exampleInputFile">
+                    
+              </div>
+     <div class="form-group col-lg-12">         
+    <button type="button" class="btn btn-success btn-sm">Submit New Claim</button>
+    </div>
+    
+    
+  </div>
+</div>
+      
             
   
             
           </div>
-          <div class="panel-footer">
-            
-            <div class="form-group">
-                <label for="exampleInputEmail1">Type your Full name, it will act as a signature.</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
-            </div>
-          
-            
-            </div>
-      </div>
+</div>
       
       
       
@@ -205,34 +256,11 @@
       
       <hr>
       
+      <a href="vcp.html" role="button" class="btn btn-default btn-sm">Return to Home</a>
+
       
-      <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#exitApplication"> Exit</button>
       
-      <!-- Modal -->
-<div class="modal fade" id="exitApplication" tabindex="-1" role="dialog" aria-labelledby="exitApplication">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Before you exit</h4>
-      </div>
-      <div class="modal-body">
         
-        Do you want to save this application for later?
-      </div>
-      <div class="modal-footer">
-        <a href="vcp.html" role="button" class="btn btn-default btn-large">Don't save</a>
-        <a href="vcp.html" role="button" class="btn btn-success btn-large">Save</a>
-      </div>
-    </div>
-  </div>
-</div>
-      
-      
-        <div class="pull-right">
-        <a href="vcp-application-13.html" role="button" class="btn btn-primary btn-large">Prev</a>
-        <a href="vcp-application-submitted.html" role="button" class="btn btn-success btn-large">Submit Application</a>
-        </div>
       </form>
       
     </div>
